@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Borá Dividir essa conta?!</h1>
+    <p>-Você deverá escrever cada item, o valor total do item seguido da quantidade de pessoas da divisão.<br><br>Exemplo:<br>cerveja<br>50.00<br>5</p>
+    <p>-Assim irá calcular o valor por pessoa de cada item.<br><br><br></p>
+    <form class="form">
+        <p class ="enunciado">Item:</p>
+        <input type="text" id="escrita" class="item">
+        <p class ="enunciado">Preço total do item:</p>
+        <input type="number" id="escrita2" class="preco">
+        <p class ="enunciado">Número de pessoas:</p>
+        <input type="number" id="escrita3" class="pessoas">
+        <button class="btn">Calcular</button>
+        <button class="btn10">Calcular com 10% incluso</button>
+        <div id="resultado" class="sucesso"></div>
+        <div id="resultadoErro" class="erro"></div>
+    </form>
+    <div id="coeficientes" class="sucesso"></div>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
